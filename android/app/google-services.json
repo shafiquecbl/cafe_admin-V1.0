@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "659399041422",
+    "project_id": "cui-cafe",
+    "storage_bucket": "cui-cafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659399041422:android:0b74414bd53d7b6470c4df",
+        "android_client_info": {
+          "package_name": "com.cui.cafe_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659399041422-o119vjr1rag65bvigc9v7rii6ejce56n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8Neh89On-3HDQpzVn0JeMiMDQLKnr1os"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659399041422-o119vjr1rag65bvigc9v7rii6ejce56n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
