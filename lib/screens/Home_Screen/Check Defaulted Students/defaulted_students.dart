@@ -61,29 +61,70 @@ class _CheckDefaultedStudentsState extends State<CheckDefaultedStudents> {
   }
 
   studentList(DocumentSnapshot snapshot) {
-    return ExpansionTile(
-      leading: CircleAvatar(
-          radius: 22,
-          backgroundColor: Colors.grey[50],
-          child: ClipRRect(
-              borderRadius: BorderRadius.circular(70),
-              child: Image.asset(
-                'assets/images/nullUser.png',
-                width: 40,
-                height: 40,
-                fit: BoxFit.cover,
-              ))),
-      title: Text(snapshot['Registeration No'].toUpperCase(),
-          style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.black.withOpacity(0.7))),
-      subtitle: Text(snapshot['Name']),
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(bottom: 10),
-          child: Text('Remaining Dues: Rs.${snapshot['Remaining Dues']}'),
-        )
-      ],
+    return Card(
+      elevation: 2,
+      shadowColor: kPrimaryColor,
+      child: ExpansionTile(
+        leading: Container(
+          width: 55,
+          height: 55,
+          padding: EdgeInsets.all(2),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(40)),
+            border: Border.all(
+              width: 2,
+              color: Theme.of(context).primaryColor,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 2,
+                blurRadius: 5,
+              ),
+            ],
+          ),
+          child: Container(
+            padding: EdgeInsets.all(1),
+            decoration: BoxDecoration(
+              color: Colors.grey[100],
+              borderRadius: BorderRadius.circular(50),
+            ),
+            constraints: BoxConstraints(
+              minWidth: 55,
+              minHeight: 55,
+            ),
+            child: Center(
+              child: Text(
+                '${(snapshot['Name'].trim().split(' ').first)[0]}${(snapshot['Name'].trim().trimLeft().split(' ').last)[0]}',
+                style: GoogleFonts.teko(
+                  color: kPrimaryColor,
+                  fontSize: 30,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+        ),
+        title: Text(snapshot['Registeration No'].toUpperCase(),
+            style: GoogleFonts.teko(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black.withOpacity(0.7))),
+        subtitle: Text(
+          snapshot['Name'],
+        ),
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: Text('Remaining Dues: Rs.${snapshot['Remaining Dues']}',
+                style: GoogleFonts.teko(
+                  color: Colors.blue,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                )),
+          )
+        ],
+      ),
     );
   }
 }

@@ -10,7 +10,6 @@ import 'package:cafe_admin/constants.dart';
 import 'package:cafe_admin/screens/Home_Screen/Teachers/add_teachers.dart';
 import 'History/check_history.dart';
 import 'Students/Add Students/add_students.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class GridDashboard extends StatelessWidget {
@@ -57,12 +56,12 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kPrimaryColor.withOpacity(0.3),
+            color: kCardColor,
             spreadRadius: 0,
             blurRadius: 2,
             offset: Offset(2, 0),
           )
-        ], color: Colors.grey[50], borderRadius: BorderRadius.circular(10)),
+        ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -76,8 +75,7 @@ class GridDashboard extends StatelessWidget {
             ),
             Text(
               "Add Teachers",
-              style:
-                  GoogleFonts.teko(fontWeight: FontWeight.w600, fontSize: 18),
+              style: stylee,
             ),
           ],
         ),
@@ -94,12 +92,12 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kPrimaryColor.withOpacity(0.3),
+            color: kCardColor,
             spreadRadius: 0,
             blurRadius: 2,
             offset: Offset(2, 0),
           )
-        ], color: Colors.grey[50], borderRadius: BorderRadius.circular(10)),
+        ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -113,8 +111,7 @@ class GridDashboard extends StatelessWidget {
             ),
             Text(
               "Add Students",
-              style:
-                  GoogleFonts.teko(fontWeight: FontWeight.w600, fontSize: 18),
+              style: stylee,
             ),
           ],
         ),
@@ -131,12 +128,12 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kPrimaryColor.withOpacity(0.3),
+            color: kCardColor,
             spreadRadius: 0,
             blurRadius: 2,
             offset: Offset(2, 0),
           )
-        ], color: Colors.grey[50], borderRadius: BorderRadius.circular(10)),
+        ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -150,8 +147,7 @@ class GridDashboard extends StatelessWidget {
             ),
             Text(
               "Print Challan",
-              style:
-                  GoogleFonts.teko(fontWeight: FontWeight.w600, fontSize: 18),
+              style: stylee,
             ),
           ],
         ),
@@ -168,12 +164,12 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kPrimaryColor.withOpacity(0.3),
+            color: kCardColor,
             spreadRadius: 0,
             blurRadius: 2,
             offset: Offset(2, 0),
           )
-        ], color: Colors.grey[50], borderRadius: BorderRadius.circular(10)),
+        ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -187,8 +183,7 @@ class GridDashboard extends StatelessWidget {
             ),
             Text(
               "History",
-              style:
-                  GoogleFonts.teko(fontWeight: FontWeight.w600, fontSize: 18),
+              style: stylee,
             ),
           ],
         ),
@@ -205,12 +200,12 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kPrimaryColor.withOpacity(0.3),
+            color: kCardColor,
             spreadRadius: 0,
             blurRadius: 2,
             offset: Offset(2, 0),
           )
-        ], color: Colors.grey[50], borderRadius: BorderRadius.circular(10)),
+        ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -224,8 +219,7 @@ class GridDashboard extends StatelessWidget {
             ),
             Text(
               "Check Students",
-              style:
-                  GoogleFonts.teko(fontWeight: FontWeight.w600, fontSize: 18),
+              style: stylee,
             ),
           ],
         ),
@@ -242,12 +236,12 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kPrimaryColor.withOpacity(0.3),
+            color: kCardColor,
             spreadRadius: 0,
             blurRadius: 2,
             offset: Offset(2, 0),
           )
-        ], color: Colors.grey[50], borderRadius: BorderRadius.circular(10)),
+        ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -262,8 +256,7 @@ class GridDashboard extends StatelessWidget {
             Text(
               "Defaulted Students",
               textAlign: TextAlign.center,
-              style:
-                  GoogleFonts.teko(fontWeight: FontWeight.w600, fontSize: 18),
+              style: stylee,
             ),
           ],
         ),
@@ -280,12 +273,12 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kPrimaryColor.withOpacity(0.3),
+            color: kCardColor,
             spreadRadius: 0,
             blurRadius: 2,
             offset: Offset(2, 0),
           )
-        ], color: Colors.grey[50], borderRadius: BorderRadius.circular(10)),
+        ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -300,8 +293,7 @@ class GridDashboard extends StatelessWidget {
             Text(
               "Remaining Dues",
               textAlign: TextAlign.center,
-              style:
-                  GoogleFonts.teko(fontWeight: FontWeight.w600, fontSize: 18),
+              style: stylee,
             ),
           ],
         ),
@@ -318,12 +310,12 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kPrimaryColor.withOpacity(0.3),
+            color: kCardColor,
             spreadRadius: 0,
             blurRadius: 2,
             offset: Offset(2, 0),
           )
-        ], color: Colors.grey[50], borderRadius: BorderRadius.circular(10)),
+        ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -338,8 +330,7 @@ class GridDashboard extends StatelessWidget {
             Text(
               "Pay Bill",
               textAlign: TextAlign.center,
-              style:
-                  GoogleFonts.teko(fontWeight: FontWeight.w600, fontSize: 18),
+              style: stylee,
             ),
           ],
         ),
@@ -356,12 +347,12 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kPrimaryColor.withOpacity(0.3),
+            color: kCardColor,
             spreadRadius: 0,
             blurRadius: 2,
             offset: Offset(2, 0),
           )
-        ], color: Colors.grey[50], borderRadius: BorderRadius.circular(10)),
+        ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -378,8 +369,7 @@ class GridDashboard extends StatelessWidget {
               child: Text(
                 "Add Fund",
                 textAlign: TextAlign.center,
-                style:
-                    GoogleFonts.teko(fontWeight: FontWeight.w600, fontSize: 18),
+                style: stylee,
               ),
             ),
           ],

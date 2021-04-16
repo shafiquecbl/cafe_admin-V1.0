@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cafe_admin/size_config.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const kPrimaryColor = Color(0xFF492E7D);
 const kGreenColor = Color(0xFF388E3C);
@@ -11,6 +12,8 @@ const kProfileColor = Color(0xFF2B2B2B);
 const kTextFieldColor = Color(0xFF12A89D);
 const kSecondaryColor = Color(0xFF979797);
 const kTextColor = Color(0xFF757575);
+const kDashboardColor = Color(0xFF2E1948);
+const kCardColor = Color(0xFF3F2C56);
 
 final headingStyle = TextStyle(
   fontSize: getProportionateScreenWidth(28),
@@ -18,6 +21,9 @@ final headingStyle = TextStyle(
   color: Colors.black,
   height: 1.5,
 );
+
+final stylee = GoogleFonts.teko(
+    fontWeight: FontWeight.w600, fontSize: 18, color: Colors.grey[500]);
 
 // Form Error
 final RegExp emailValidatorRegExp =
