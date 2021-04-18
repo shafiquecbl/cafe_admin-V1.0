@@ -3,7 +3,6 @@ import 'package:cafe_admin/size_config.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 const kPrimaryColor = Color(0xFF492E7D);
-const kGreenColor = Color(0xFF388E3C);
 const kWhiteColor = Colors.white;
 const hexColor = Color(0xFFf5f4f4);
 const kOfferColor = Color(0xFFE3E9F5);
@@ -13,7 +12,8 @@ const kTextFieldColor = Color(0xFF12A89D);
 const kSecondaryColor = Color(0xFF979797);
 const kTextColor = Color(0xFF757575);
 const kDashboardColor = Color(0xFF2E1948);
-const kCardColor = Color(0xFF3F2C56);
+const kCardColor = hexColor;
+const kIconColor = Colors.deepPurpleAccent;
 
 final headingStyle = TextStyle(
   fontSize: getProportionateScreenWidth(28),
@@ -23,7 +23,7 @@ final headingStyle = TextStyle(
 );
 
 final stylee = GoogleFonts.teko(
-    fontWeight: FontWeight.w600, fontSize: 18, color: Colors.grey[500]);
+    fontWeight: FontWeight.w600, fontSize: 18, color: kTextColor);
 
 // Form Error
 final RegExp emailValidatorRegExp =

@@ -15,35 +15,33 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 class GridDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: StaggeredGridView.count(
-        crossAxisCount: 2,
-        crossAxisSpacing: 30,
-        mainAxisSpacing: 30,
-        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-        staggeredTiles: [
-          StaggeredTile.extent(1, 120),
-          StaggeredTile.extent(1, 120),
-          StaggeredTile.extent(1, 120),
-          StaggeredTile.extent(1, 120),
-          StaggeredTile.extent(1, 120),
-          StaggeredTile.extent(1, 120),
-          StaggeredTile.extent(1, 120),
-          StaggeredTile.extent(1, 120),
-          StaggeredTile.extent(1, 120),
-        ],
-        children: [
-          checkStudentsList(context),
-          student(context),
-          teacher(context),
-          checkRemainingDuesStudent(context),
-          printChallan(context),
-          checkDefaultedStudent(context),
-          addAmountInStudentFund(context),
-          payBill(context),
-          history(context),
-        ],
-      ),
+    return StaggeredGridView.count(
+      crossAxisCount: 2,
+      crossAxisSpacing: 30,
+      mainAxisSpacing: 30,
+      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 20),
+      staggeredTiles: [
+        StaggeredTile.extent(1, 120),
+        StaggeredTile.extent(1, 120),
+        StaggeredTile.extent(1, 120),
+        StaggeredTile.extent(1, 120),
+        StaggeredTile.extent(1, 120),
+        StaggeredTile.extent(1, 120),
+        StaggeredTile.extent(1, 120),
+        StaggeredTile.extent(1, 120),
+        StaggeredTile.extent(1, 120),
+      ],
+      children: [
+        checkStudentsList(context),
+        student(context),
+        teacher(context),
+        checkRemainingDuesStudent(context),
+        printChallan(context),
+        checkDefaultedStudent(context),
+        addAmountInStudentFund(context),
+        payBill(context),
+        history(context),
+      ],
     );
   }
 
@@ -56,10 +54,10 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kCardColor,
+            color: kIconColor.withOpacity(0.8),
             spreadRadius: 0,
-            blurRadius: 2,
-            offset: Offset(2, 0),
+            blurRadius: 0.5,
+            offset: Offset(1, 0),
           )
         ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
@@ -67,7 +65,7 @@ class GridDashboard extends StatelessWidget {
           children: <Widget>[
             SvgPicture.asset(
               "assets/icons/teacher.svg",
-              color: kTextFieldColor,
+              color: kIconColor,
               width: 42,
             ),
             SizedBox(
@@ -92,10 +90,10 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kCardColor,
+            color: kIconColor.withOpacity(0.8),
             spreadRadius: 0,
-            blurRadius: 2,
-            offset: Offset(2, 0),
+            blurRadius: 0.5,
+            offset: Offset(1, 0),
           )
         ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
@@ -103,7 +101,7 @@ class GridDashboard extends StatelessWidget {
           children: <Widget>[
             SvgPicture.asset(
               "assets/icons/student.svg",
-              color: kTextFieldColor,
+              color: kIconColor,
               width: 42,
             ),
             SizedBox(
@@ -128,10 +126,10 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kCardColor,
+            color: kIconColor.withOpacity(0.8),
             spreadRadius: 0,
-            blurRadius: 2,
-            offset: Offset(2, 0),
+            blurRadius: 0.5,
+            offset: Offset(1, 0),
           )
         ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
@@ -139,7 +137,7 @@ class GridDashboard extends StatelessWidget {
           children: <Widget>[
             Icon(
               Icons.print_outlined,
-              color: kTextFieldColor,
+              color: kIconColor,
               size: 42,
             ),
             SizedBox(
@@ -164,10 +162,10 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kCardColor,
+            color: kIconColor.withOpacity(0.8),
             spreadRadius: 0,
-            blurRadius: 2,
-            offset: Offset(2, 0),
+            blurRadius: 0.5,
+            offset: Offset(1, 0),
           )
         ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
@@ -175,7 +173,7 @@ class GridDashboard extends StatelessWidget {
           children: <Widget>[
             Icon(
               Icons.history_outlined,
-              color: kTextFieldColor,
+              color: kIconColor,
               size: 42,
             ),
             SizedBox(
@@ -200,10 +198,10 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kCardColor,
+            color: kIconColor.withOpacity(0.8),
             spreadRadius: 0,
-            blurRadius: 2,
-            offset: Offset(2, 0),
+            blurRadius: 0.5,
+            offset: Offset(1, 0),
           )
         ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
@@ -211,7 +209,7 @@ class GridDashboard extends StatelessWidget {
           children: <Widget>[
             SvgPicture.asset(
               "assets/icons/User.svg",
-              color: kTextFieldColor,
+              color: kIconColor,
               width: 42,
             ),
             SizedBox(
@@ -236,10 +234,10 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kCardColor,
+            color: kIconColor.withOpacity(0.8),
             spreadRadius: 0,
-            blurRadius: 2,
-            offset: Offset(2, 0),
+            blurRadius: 0.5,
+            offset: Offset(1, 0),
           )
         ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
@@ -247,7 +245,7 @@ class GridDashboard extends StatelessWidget {
           children: <Widget>[
             SvgPicture.asset(
               "assets/icons/defaulters.svg",
-              color: kTextFieldColor,
+              color: kIconColor,
               width: 42,
             ),
             SizedBox(
@@ -273,10 +271,10 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kCardColor,
+            color: kIconColor.withOpacity(0.8),
             spreadRadius: 0,
-            blurRadius: 2,
-            offset: Offset(2, 0),
+            blurRadius: 0.5,
+            offset: Offset(1, 0),
           )
         ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
@@ -284,7 +282,7 @@ class GridDashboard extends StatelessWidget {
           children: <Widget>[
             Icon(
               Icons.money,
-              color: kTextFieldColor,
+              color: kIconColor,
               size: 42,
             ),
             SizedBox(
@@ -310,10 +308,10 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kCardColor,
+            color: kIconColor.withOpacity(0.8),
             spreadRadius: 0,
-            blurRadius: 2,
-            offset: Offset(2, 0),
+            blurRadius: 0.5,
+            offset: Offset(1, 0),
           )
         ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
@@ -321,7 +319,7 @@ class GridDashboard extends StatelessWidget {
           children: <Widget>[
             Icon(
               Icons.payment_outlined,
-              color: kTextFieldColor,
+              color: kIconColor,
               size: 42,
             ),
             SizedBox(
@@ -347,10 +345,10 @@ class GridDashboard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: kCardColor,
+            color: kIconColor.withOpacity(0.8),
             spreadRadius: 0,
-            blurRadius: 2,
-            offset: Offset(2, 0),
+            blurRadius: 0.5,
+            offset: Offset(1, 0),
           )
         ], color: kCardColor, borderRadius: BorderRadius.circular(10)),
         child: Column(
@@ -358,7 +356,7 @@ class GridDashboard extends StatelessWidget {
           children: <Widget>[
             Icon(
               Icons.add,
-              color: kTextFieldColor,
+              color: kIconColor,
               size: 42,
             ),
             SizedBox(

@@ -36,60 +36,58 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget dashboard(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
-        backgroundColor: kDashboardColor,
-        body: Container(
-          child: Column(
-            children: <Widget>[
-              SizedBox(
-                height: 80,
+        backgroundColor: kWhiteColor,
+        body: Stack(
+          children: [
+            Container(
+              width: size.width,
+              height: size.height * 0.4,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/curved3.png'),
+                    fit: BoxFit.cover),
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            ),
+            SafeArea(
+              child: Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Column(
                   children: <Widget>[
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          user.displayName,
+                    ListTile(
+                        contentPadding:
+                            EdgeInsets.only(left: 20, right: 20, top: 20),
+                        title: Text(
+                          "Muhammad Shafique",
                           style: GoogleFonts.teko(
+                              color: hexColor,
                               fontWeight: FontWeight.bold,
-                              fontSize: 22,
-                              color: Colors.grey[350]),
+                              fontSize: 22),
                         ),
-                        SizedBox(
-                          height: 4,
-                        ),
-                        Text(
+                        subtitle: Text(
                           "Admin",
                           style: GoogleFonts.teko(
-                              color: Color(0xFFAAA5B3),
+                              color: Colors.deepOrangeAccent,
                               fontSize: 16,
                               fontWeight: FontWeight.w600),
                         ),
-                      ],
-                    ),
-                    IconButton(
-                      alignment: Alignment.topCenter,
-                      icon: Icon(
-                        Icons.logout,
-                        color: kOfferBackColor,
-                      ),
-                      onPressed: () {
-                        confirmSignout(context);
-                      },
-                    )
+                        trailing: IconButton(
+                          alignment: Alignment.topCenter,
+                          icon: Icon(
+                            Icons.logout,
+                            color: hexColor,
+                          ),
+                          onPressed: () {
+                            confirmSignout(context);
+                          },
+                        )),
+                    Expanded(child: GridDashboard()),
                   ],
                 ),
               ),
-              SizedBox(
-                height: 40,
-              ),
-              GridDashboard()
-            ],
-          ),
+            ),
+          ],
         ));
   }
 
