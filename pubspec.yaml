@@ -41,7 +41,7 @@ dev_dependencies:
   firebase_storage:
   flutter_staggered_grid_view:
   flutter_offline: ^0.2.4+1
-  pdf: ^2.0.0
+  pdf: ^3.3.0
   path_provider: ^1.6.22
   flutter_full_pdf_viewer:
   printing:
