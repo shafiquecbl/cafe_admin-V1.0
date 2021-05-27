@@ -32,17 +32,17 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  google_fonts: ^1.1.2
+  google_fonts: ^2.1.0
   flutter_svg: ^0.22.0
-  cloud_firestore:
-  firebase_auth:
-  firebase_core:
+  cloud_firestore: ^2.2.0
+  firebase_auth: ^1.2.0
+  firebase_core: ^1.2.0
   flutter_spinkit: ^4.1.2+1
-  firebase_storage:
+  firebase_storage: ^8.0.4
   flutter_staggered_grid_view:
   flutter_offline: ^0.2.4+1
   pdf: ^3.3.0
-  path_provider: ^1.6.22
+  path_provider: ^2.0.2
   flutter_full_pdf_viewer:
   printing:
 
