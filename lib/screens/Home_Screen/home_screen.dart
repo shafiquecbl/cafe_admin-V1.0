@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         contentPadding:
                             EdgeInsets.only(left: 20, right: 20, top: 20),
                         title: Text(
-                          "Muhammad Shafique",
+                          user.displayName,
                           style: GoogleFonts.teko(
                               color: hexColor,
                               fontWeight: FontWeight.bold,
