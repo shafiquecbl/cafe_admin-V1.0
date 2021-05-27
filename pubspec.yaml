@@ -33,7 +33,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   google_fonts: ^1.1.2
-  flutter_svg:
+  flutter_svg: ^0.22.0
   cloud_firestore:
   firebase_auth:
   firebase_core:
